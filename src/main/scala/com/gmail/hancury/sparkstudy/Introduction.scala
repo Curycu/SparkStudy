@@ -27,7 +27,7 @@ object Introduction {
       .createDataFrame(sparkContext.emptyRDD[Row], schema) // set schema
       .printSchema
 
-    // 3. rollup & cube
+    // 3. cube & rollup & groupBy
     import spark.implicits._ // import all classes from spark.implicits
 
     val sales = Seq(
