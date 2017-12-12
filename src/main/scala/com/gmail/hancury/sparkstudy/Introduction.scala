@@ -9,7 +9,6 @@ object Introduction {
     import org.apache.spark.sql.SparkSession // import a class
 
     val spark = SparkSession.builder().appName("Introduction").master("local").getOrCreate()
-    val sparkContext = spark.sparkContext
 
     // 1. read.csv
     spark
@@ -24,7 +23,7 @@ object Introduction {
 
     val schema = StructType(StructField("k", StringType, false) :: StructField("v", IntegerType, true) :: Nil)
     spark
-      .createDataFrame(sparkContext.emptyRDD[Row], schema) // set schema
+      .createDataFrame(spark.sparkContext.emptyRDD[Row], schema) // set schema
       .printSchema
 
     // 3. cube & rollup & groupBy
