@@ -15,7 +15,7 @@ object Second extends App {
     ("Toronto", 2017, 50)
   ).toDF("city", "year", "amount").createTempView("sales_data")
 
-  val dynamicQuery: (String, Int) => String =
+  val dynamicQuery: (String, Int) => String = // dynamic query : by string interpolation & function
     (city, year) => s"select * from sales_data where city = '$city' and year = '$year'"
 
   sqlContext.sql(dynamicQuery("Boston", 2016)).show
