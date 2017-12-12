@@ -3,7 +3,7 @@
 - example codes for spark sql data wrangling
 
 > how to hands on lab this project
-> 1. install java
+> 1. install java (jdk, not jre)
 > 2. install intellij
 > 3. install scala, sbt plugin on intellij
 > 4. create sbt project & set jdk
