@@ -1,6 +1,7 @@
 package com.gmail.hancury.sparkstudy
 
 object Third extends App {
+
   // 5. index generating syntax : to, until
   val t = 1 to 10 // less or equal than
   val u = 1 until 10 // less than
@@ -23,7 +24,7 @@ object Third extends App {
       if n % 2 == 1  // filter
     } yield n * 10 // transform
 
-  var knitList: List[String] =
+  val knitList: List[String] =
     for {
       pre <- List("a","b","c") // 1rd generator
       sur <- seq.take(3) // 2nd generator
@@ -52,12 +53,13 @@ object Third extends App {
           ss
             .map(sur => pre + sur) // transform
             .map(res => "res: " + res) // transform
-  }
+          }
 
   println(even)
   println(odd)
   println(knitSeq)
 
-  for(x <- 1 to 10) println(x)
-  (1 to 10).foreach(x => println(x))
+  for(x <- 1 until 10) print(x)
+  println()
+  (1 until 10).foreach(x => print(x))
 }
