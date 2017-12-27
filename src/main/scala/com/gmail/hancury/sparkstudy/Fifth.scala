@@ -8,8 +8,15 @@ class MyList[+A]{
     }
 
   def reverse: MyList[A] = foldLeft(MyList[A]())((b, a) => Chain(a, b))
+
   def foldRight[B](z: B)(f: (A, B) => B): B = reverse.foldLeft(z)((a, b) => f(b, a)) // official name `:\`
+
   def push[B >: A](arg: B): MyList[B] = Chain(arg, this) // official name `+:`
+
+  def append[B >: A](args: MyList[B]): MyList[B] = { // official name `++`
+    val o: MyList[B] = this
+    args.foldLeft(o.reverse)((b, a) => Chain(a, b)).reverse
+  }
 }
 
 case class Chain[+A](head: A, tail: MyList[A]) extends MyList[A] // official name `::`
@@ -31,6 +38,7 @@ object Fifth extends App {
   println(summation)
   println(product)
   println(r)
+  println(n.append(r))
 
   /*
   homework ->
