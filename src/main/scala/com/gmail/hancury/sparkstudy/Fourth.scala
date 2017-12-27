@@ -2,7 +2,7 @@ package com.gmail.hancury.sparkstudy
 
 // 7.
 //   `case` syntax : pattern matching
-//   `try` & `catch` syntax
+//   `try` & `catch` syntax & throw new Exception
 trait MyOption[+A]{
   // mandatory
   def flatten: A = this match {
@@ -49,4 +49,6 @@ object Fourth extends App {
   homework ->
     Either : How to conserve Exception messages?
   */
+
+  Option(1).map(_ + 1).getOrElse(null)
 }

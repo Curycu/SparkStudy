@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f4fcf2a-64b1-43b9-b861-f43272c83ed3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fifth.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fifth.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fourth.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fourth.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,7 +43,7 @@
       <file leaf-file-name="Introduction.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Introduction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
+            <state relative-caret-position="0">
               <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="6" />
               <folding>
                 <element signature="e#523#554#0" expanded="true" />
@@ -55,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Second.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="616">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,27 +66,37 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Third.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1764">
-              <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+              <caret line="63" column="37" lean-forward="false" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fourth.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Fourth.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fourth.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="504">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fifth.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fifth.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fifth.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="504">
+              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List.scala" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.12-sources.jar!/scala/collection/immutable/List.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="407" column="16" lean-forward="true" selection-start-line="407" selection-start-column="16" selection-end-line="407" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -95,6 +106,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>reverse</find>
       <find>foldLeft</find>
     </findStrings>
   </component>
@@ -117,8 +129,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Introduction.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Second.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Third.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fourth.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fifth.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fourth.scala" />
       </list>
     </option>
   </component>
@@ -146,10 +158,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +202,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Fifth">
+  <component name="RunManager" selected="Application.Fourth">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -400,8 +412,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Fifth" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Fourth" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Fourth" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Fifth" />
         <item index="2" class="java.lang.String" itemvalue="Application.Third" />
         <item index="3" class="java.lang.String" itemvalue="Application.Second" />
         <item index="4" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
@@ -456,6 +468,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2582" height="1562" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -467,7 +480,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4052895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4052895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -503,7 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -529,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,13 +835,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
           <caret line="60" column="55" lean-forward="false" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Introduction.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
+        <state relative-caret-position="0">
           <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="6" />
           <folding>
             <element signature="e#523#554#0" expanded="true" />
@@ -848,7 +851,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Second.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -856,7 +859,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Third.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1764">
-          <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+          <caret line="63" column="37" lean-forward="false" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -869,34 +872,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fourth.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.12-sources.jar!/scala/collection/LinearSeqOptimized.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="126" column="7" lean-forward="true" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
+        <state relative-caret-position="265">
+          <caret line="119" column="6" lean-forward="false" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.12-sources.jar!/scala/collection/immutable/List.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="407" column="15" lean-forward="false" selection-start-line="407" selection-start-column="15" selection-end-line="407" selection-end-column="15" />
+        <state relative-caret-position="238">
+          <caret line="407" column="16" lean-forward="true" selection-start-line="407" selection-start-column="16" selection-end-line="407" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fifth.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="504">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fourth.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding />
         </state>
       </provider>
