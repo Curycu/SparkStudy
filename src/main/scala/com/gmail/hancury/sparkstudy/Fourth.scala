@@ -1,11 +1,12 @@
 package com.gmail.hancury.sparkstudy
 
 // 7.
-//   `case` syntax : pattern matching
-//   `try` & `catch` syntax & throw new Exception
+//   `trait`, `class` creation
+//   `match` & `case` syntax : pattern matching
+//   `Exception` & `try, catch` syntax
 trait MyOption[+A]{
   // mandatory
-  def flatten: A = this match {
+  def flatten: A = this match { // official name : get
     case MySome(x) => x
     case _ => throw new Exception("MyNone : you cannot flatten this")
   }
@@ -39,7 +40,7 @@ object Fourth extends App {
     else Math.log10(n)
 
   val mo1 = MyOption(-10)
-  // mo1.map(x => logTen(x)).flatten // caution : error
+  // mo1.map(x => logTen(x)).flatten // caution : Exception
 
   val mo2 = MyOption(10)
   val logTenOp = MyOption.lift(logTen)
