@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f4fcf2a-64b1-43b9-b861-f43272c83ed3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fifth.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fifth.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/E.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Fourth.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/D.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Introduction.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/A.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Second.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/B.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/Third.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/C.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/D.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/D.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/E.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/E.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/F.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/F.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,8 +76,8 @@
       <file leaf-file-name="D.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/D.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="280">
+              <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -90,8 +86,8 @@
       <file leaf-file-name="E.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/E.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="364">
+              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -100,8 +96,8 @@
       <file leaf-file-name="F.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/F.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="168">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -867,14 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/B.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/C.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
@@ -883,26 +871,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/D.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/E.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="364">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/E.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/D.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="280">
+          <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/B.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gmail/hancury/sparkstudy/F.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="168">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
