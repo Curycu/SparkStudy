@@ -1,6 +1,6 @@
 package com.gmail.hancury.sparkstudy
 
-object Third extends App {
+object C extends App {
 
   // 5. index generating syntax : to, until
   val t = 1 to 10 // less or equal than

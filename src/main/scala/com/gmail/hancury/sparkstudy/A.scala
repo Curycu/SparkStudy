@@ -4,7 +4,7 @@ package com.gmail.hancury.sparkstudy
   * Created by cury on 2017-12-11.
   */
 
-object Introduction {
+object A {
   def main(args: Array[String]): Unit = {
     import org.apache.spark.sql.SparkSession // import a class
 

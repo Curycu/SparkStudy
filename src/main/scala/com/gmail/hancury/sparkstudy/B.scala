@@ -1,6 +1,6 @@
 package com.gmail.hancury.sparkstudy
 
-object Second extends App {
+object B extends App {
   import org.apache.spark.sql.SparkSession
   val spark = SparkSession.builder().appName("Second").master("local").getOrCreate()
   import spark.implicits._

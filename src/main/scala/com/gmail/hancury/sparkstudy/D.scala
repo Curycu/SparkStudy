@@ -34,7 +34,7 @@ object MyOption {
     oa => oa.map(f)
 }
 
-object Fourth extends App {
+object D extends App {
   def logTen(n: Int): Double =
     if(n < 0) throw new Exception("negative number is not allowed")
     else Math.log10(n)

@@ -73,7 +73,7 @@ object MyList {
     else Chain(args.head, apply(args.tail: _*))
 }
 
-object Fifth extends App {
+object E extends App {
   val n = MyList(1,2,3,4,5)
   val r = n.reverse
   val nm = n map (_ + 1)
