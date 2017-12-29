@@ -8,7 +8,7 @@ object A {
   def main(args: Array[String]): Unit = {
     import org.apache.spark.sql.SparkSession // import a class
 
-    val spark = SparkSession.builder().appName("Introduction").master("local").getOrCreate()
+    val spark = SparkSession.builder().appName("A").master("local").getOrCreate()
 
     // 1. read.csv
     spark

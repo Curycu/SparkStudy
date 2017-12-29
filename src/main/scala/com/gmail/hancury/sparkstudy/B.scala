@@ -2,7 +2,7 @@ package com.gmail.hancury.sparkstudy
 
 object B extends App {
   import org.apache.spark.sql.SparkSession
-  val spark = SparkSession.builder().appName("Second").master("local").getOrCreate()
+  val spark = SparkSession.builder().appName("B").master("local").getOrCreate()
   import spark.implicits._
   val sqlContext = spark.sqlContext
 
