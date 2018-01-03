@@ -15,5 +15,4 @@ object F extends App {
       ("Boston", 2016, 150),
       ("Toronto", 2017, 50)
     ).toDF("city", "year", "amount")
-  
 }

@@ -1,11 +1,13 @@
 <component name="libraryTable">
   <library name="sbt: com.jamesmurty.utils:java-xmlbuilder:1.0:jar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/jars/java-xmlbuilder-1.0.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/1.0/java-xmlbuilder-1.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/1.0/java-xmlbuilder-1.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/srcs/java-xmlbuilder-1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/1.0/java-xmlbuilder-1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

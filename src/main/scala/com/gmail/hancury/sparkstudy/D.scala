@@ -40,7 +40,7 @@ object D extends App {
     else Math.log10(n)
 
   val mo1 = MyOption(-10)
-  // mo1.map(x => logTen(x)).flatten // caution : Exception
+  // mo1.map(logTen(_)).flatten // caution : Exception
 
   val mo2 = MyOption(10)
   val logTenOp = MyOption.lift(logTen)
