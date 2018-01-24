@@ -1,5 +1,7 @@
 /*
-Zeppelin notebook
+
+with Zeppelin notebook
+
 
 # DataFrame A
 ==========================================
@@ -59,7 +61,6 @@ cuUsersWithAge
   .filter(u => u._3 == "F" && u._4 % 2 == 0)
   .show
 ==========================================
-
 
 
 # join DataFrame B
