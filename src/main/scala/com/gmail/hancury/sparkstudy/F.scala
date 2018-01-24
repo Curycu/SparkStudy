@@ -70,8 +70,8 @@ val targetUsers =
   .as[(Int, String)]
 
 val joined =
-  cuUsersWithAge.toDF().as("DF_A")
-  .join(targetUsers.toDF().as("DF_B"), $"DF_A.idx" === $"DF_B.idx")
+  cuUsersWithAge.toDF.as("DF_A")
+  .join(targetUsers.toDF.as("DF_B"), $"DF_A.idx" === $"DF_B.idx")
   .withColumn("u_id", $"DF_B.id")
   .select("DF_A.idx", "DF_A.birth_date", "DF_A.gender", "DF_A.age", "u_id")
   .orderBy(desc("DF_A.idx"))
