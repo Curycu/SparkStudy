@@ -2,7 +2,6 @@
 
 with Zeppelin notebook
 
-
 # DataFrame A
 ==========================================
 val cuUsers = sqlContext.sql("""
