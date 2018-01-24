@@ -30,16 +30,16 @@ object A {
     import spark.implicits._ // import all classes from spark.implicits
 
     val sales = Seq(
-      ("Warsaw", 2016, 100),
-      ("Warsaw", 2017, 200),
-      ("Boston", 2015, 50),
-      ("Boston", 2016, 150),
-      ("Toronto", 2017, 50)
-    ).toDF("city", "year", "amount") // implicit conversion : Seq => DatasetHolder : so we can use .toDF on Seq class
+      ("romance", 2016, 100),
+      ("romance", 2017, 200),
+      ("general", 2015, 50),
+      ("general", 2016, 150),
+      ("bl", 2017, 50)
+    ).toDF("genre", "year", "amount") // implicit conversion : Seq => DatasetHolder : so we can use .toDF on Seq class
 
     sales.printSchema // toDF : compare with explicit schema settings (check nullable)
-    sales.cube("city","year").count.show // the biggist combination
-    sales.rollup("city","year").count.show // the middle size combination
-    sales.groupBy("city","year").count.show // the smallest combination
+    sales.cube("genre","year").count.show // the biggist combination
+    sales.rollup("genre","year").count.show // the middle size combination
+    sales.groupBy("genre","year").count.show // the smallest combination
   }
 }

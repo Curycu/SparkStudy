@@ -8,15 +8,15 @@ object B extends App {
 
   // 4. sqlContext.sql : query base approach
   Seq(
-    ("Warsaw", 2016, 100),
-    ("Warsaw", 2017, 200),
-    ("Boston", 2015, 50),
-    ("Boston", 2016, 150),
-    ("Toronto", 2017, 50)
-  ).toDF("city", "year", "amount").createTempView("sales_data")
+    ("romance", 2016, 100),
+    ("romance", 2017, 200),
+    ("general", 2015, 50),
+    ("general", 2016, 150),
+    ("bl", 2017, 50)
+  ).toDF("genre", "year", "amount").createTempView("sales_data")
 
   val dynamicQuery: (String, Int) => String = // dynamic query : by string interpolation & function
-    (city, year) => s"select * from sales_data where city = '$city' and year = '$year'"
+    (genre, year) => s"select * from sales_data where genre = '$genre' and year = '$year'"
 
-  sqlContext.sql(dynamicQuery("Boston", 2016)).show
+  sqlContext.sql(dynamicQuery("general", 2016)).show
 }
