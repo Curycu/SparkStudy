@@ -76,7 +76,7 @@ val joined =
   .select("DF_A.idx", "DF_A.birth_date", "DF_A.gender", "DF_A.age", "u_id")
   .orderBy(desc("DF_A.idx"))
 
-joined.show()
+joined.show
 joined.printSchema
 ==========================================
 targetUsers: org.apache.spark.sql.Dataset[(Int, String)] = [_1: int, _2: string]
@@ -96,7 +96,7 @@ val joinedWith =
   cuUsersWithAge.as("DS_A")
   .joinWith(targetUsers.as("DS_B"), $"DS_A.idx" === $"DS_B.idx")
 
-joinedWith.show()
+joinedWith.show
 joinedWith.printSchema
 ==========================================
 joinedWith: org.apache.spark.sql.Dataset[((Int, String, String, Int), (Int, String))] = [_1: struct<_1:int,_2:string,_3:string,_4:int>, _2: struct<_1:int,_2:string>]
