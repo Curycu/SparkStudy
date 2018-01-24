@@ -38,7 +38,7 @@ object A {
     ).toDF("genre", "year", "amount") // implicit conversion : Seq => DatasetHolder : so we can use .toDF on Seq class
 
     sales.printSchema // toDF : compare with explicit schema settings (check nullable)
-    sales.cube("genre","year").count.show // the biggist combination
+    sales.cube("genre","year").count.show // the biggest combination
     sales.rollup("genre","year").count.show // the middle size combination
     sales.groupBy("genre","year").count.show // the smallest combination
   }
