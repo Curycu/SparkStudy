@@ -55,7 +55,7 @@ root
  |-- age: integer (nullable = true)
 
 
-filtering DataFame A
+# filtering DataFame A
 ==========================================
 cuUsersWithAge
   .filter(u => u._3 == "F" && u._4 % 2 == 0)
