@@ -43,7 +43,7 @@ val cuUsersWithAge =
     .filter("birth_date != ''")
     .filter("gender != ''")
     .withColumn("age", toAgeUdf($"birth_date")) // mutate birth_date column with toAge function & rename as "age"
-    .as[(Int, String, String, Int)] // from DataFrame to Dataset
+    .as[(Int, String, String, Int)] // DataFrame -> Dataset
 
 cuUsersWithAge.printSchema
 ==========================================
