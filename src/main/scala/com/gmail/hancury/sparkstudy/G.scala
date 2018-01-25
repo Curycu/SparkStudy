@@ -20,9 +20,9 @@ object G extends App {
 
   val newSchema = StructType(
     List(
-      StructField("idx", DoubleType, false),
-      StructField("birth_date", IntegerType, false),
-      StructField("gender", StringType, false)))
+      StructField("idx_double", DoubleType, false),
+      StructField("birth_date_int", IntegerType, false),
+      StructField("gender_str", StringType, false)))
 
   val changeSchema: (DataFrame, StructType) => DataFrame =
     (df, schema) => {
