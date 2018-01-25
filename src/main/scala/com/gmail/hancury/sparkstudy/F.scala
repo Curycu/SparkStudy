@@ -79,8 +79,8 @@ val joined =
   .select("DF_A.idx", "DF_A.birth_date", "DF_A.gender", "DF_A.age", "u_id")
   .orderBy(desc("DF_A.idx"))
 
-joined.show
 joined.printSchema
+joined.show
 ==========================================
 targetUsers: org.apache.spark.sql.Dataset[(Int, String)] = [_1: int, _2: string]
 joined: org.apache.spark.sql.DataFrame = [idx: int, birth_date: string, gender: string, age: int, u_id: string]

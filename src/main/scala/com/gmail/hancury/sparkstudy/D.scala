@@ -3,7 +3,8 @@ package com.gmail.hancury.sparkstudy
 /* 7.
    `trait`, `class` creation
    `match` & `case` syntax : pattern matching
-   `Exception` & `try, catch` syntax*/
+   `Exception` & `try, catch` syntax
+*/
 trait MyOption[+A]{
   // mandatory
   def flatten: A = this match { // official name : get

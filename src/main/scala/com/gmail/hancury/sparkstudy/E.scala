@@ -4,7 +4,8 @@ package com.gmail.hancury.sparkstudy
    List data structure
    basic : push, foreach, fold, map, filter, flatMap, etc
    application : reverse, append, repeat
-   etc : `while`, `@tailrec`, `var`, `toString`*/
+   etc : `while`, `@tailrec`, `var`, `toString`
+*/
 case class Chain[+A](head: A, tail: MyList[A]) extends MyList[A] // official name `::`
 case object EmptyList extends MyList[Nothing] // official name `Nil`
 
