@@ -8,7 +8,6 @@ import org.apache.spark.sql.functions._
 object G extends App {
 
   val spark = SparkSession.builder().appName("G").master("local").getOrCreate()
-
   import spark.implicits._
 
   val df = Seq(
