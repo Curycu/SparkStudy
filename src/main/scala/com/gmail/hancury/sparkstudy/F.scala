@@ -1,6 +1,7 @@
-/*
-
-with Zeppelin notebook
+/* 9.
+   `DataFrame`, `Dataset` basic wrangling with Spark API
+   ... and UDF (User Defined Function)
+   with Zeppelin notebook
 
 # DataFrame A
 ==========================================
@@ -54,10 +55,12 @@ root
  |-- age: integer (nullable = true)
 
 
-# filtering DataFame A
+# filtering Dataset & rename columns
 ==========================================
 cuUsersWithAge
   .filter(u => u._3 == "F" && u._4 % 2 == 0)
+  .toDF // tricky part : Dataset.toDF cannot be used for rename columns... OMG
+  .toDF(Seq("idx", "birth_date", "gender", "age"): _*) // this is .toDF for DataFrame
   .show
 ==========================================
 
