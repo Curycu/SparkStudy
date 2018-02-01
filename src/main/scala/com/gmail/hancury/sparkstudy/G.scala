@@ -1,11 +1,11 @@
 package com.gmail.hancury.sparkstudy
 
-import org.apache.spark.sql._
-import org.apache.spark.sql.types._
-import org.apache.spark.sql.functions._
-
 // 10. Schema Change
 object G extends App {
+
+  import org.apache.spark.sql._
+  import org.apache.spark.sql.types._
+  import org.apache.spark.sql.functions._
 
   val spark = SparkSession.builder().appName("G").master("local").getOrCreate()
   import spark.implicits._
@@ -17,15 +17,15 @@ object G extends App {
     (4, 870426, "F")
   ).toDF("idx", "birth_date", "gender")
 
-  val newSchema = StructType(
+  val schema = StructType(
     List(
       StructField("idx_double", DoubleType, false),
       StructField("birth_date_int", IntegerType, false),
       StructField("gender_str", StringType, false)))
 
   val changeSchema: (DataFrame, StructType) => DataFrame =
-    (df, schema) => {
-      val colNames = df.columns
+    (df, newSchema) => {
+      val colNames: Array[String] = df.columns
       val newDf =
         colNames
           .zipWithIndex
@@ -33,16 +33,16 @@ object G extends App {
             (acc, tu) =>
               val colName = tu._1
               val idx = tu._2
-              acc.withColumn(colName, col(colName).cast(schema.fields(idx).dataType))
+              acc.withColumn(colName, col(colName).cast(newSchema.fields(idx).dataType))
           }
-      spark.createDataFrame(newDf.rdd, schema)
+      spark.createDataFrame(newDf.rdd, newSchema)
     }
 
-  val newDf = changeSchema(df, newSchema)
+  val df3 = changeSchema(df, schema)
 
   df.printSchema
   df.show
 
-  newDf.printSchema
-  newDf.show
+  df3.printSchema
+  df3.show
 }
