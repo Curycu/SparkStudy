@@ -1,6 +1,6 @@
 package com.gmail.hancury.sparkstudy
 
-// 12. diffColByKey
+// 12. diffByKey
 object I extends App {
   import org.apache.spark.sql._
   import org.apache.spark.sql.functions._
@@ -23,7 +23,7 @@ object I extends App {
       ("tester", "2018-01-18", 10))
       .toDF("id", "date", "amount")
 
-  def diffColByKey[A: TypeTag: ClassTag, B: TypeTag]
+  def diffByKey[A: TypeTag: ClassTag, B: TypeTag]
   (df: DataFrame, key: String, target: String, diffFunc: (A, A) => B, zero: B) = {
 
     val keyType =
@@ -76,17 +76,17 @@ object I extends App {
       resultDf.select(explode(col("diff_" + target)).as("diff_" + target)))
   }
 
-  val res = diffColByKey(df, "id", "amount", (x: Int, y: Int) => x - y, 0)
+  val res = diffByKey(df, "id", "amount", (x: Int, y: Int) => x - y, 0)
   res.printSchema
   res.show
 
-  val timegap: (SimpleDateFormat, Int) => (String, String) => Int =
-    (sdf, by) => (t2, t1) => ((sdf.parse(t2).getTime - sdf.parse(t1).getTime) / by).toInt
+  val timegap: (SimpleDateFormat, Int) => (String, String) => Double =
+    (sdf, by) => (t2, t1) => (sdf.parse(t2).getTime - sdf.parse(t1).getTime) / by
 
-  val daygap: (String, String) => Int =
+  val daygap: (String, String) => Double =
     timegap(new SimpleDateFormat("yyyy-MM-dd"), 1000 * 60 * 60 * 24)
 
-  val res2 = diffColByKey(df, "id", "date", daygap, 0)
+  val res2 = diffByKey(df, "id", "date", daygap, 0.0)
   res2.printSchema
   res2.show
 }
