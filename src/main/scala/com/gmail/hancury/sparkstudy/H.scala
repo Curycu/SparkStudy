@@ -7,7 +7,7 @@ object H extends App {
   import org.apache.spark.sql.functions._
   import org.apache.spark.sql.types._
 
-  val spark = SparkSession.builder().appName("H").master("local").getOrCreate()
+  val spark = SparkSession.builder().appName("sparksql").master("local").getOrCreate()
   import spark.implicits._
 
   val cbind: (DataFrame, DataFrame) => DataFrame =
@@ -15,19 +15,18 @@ object H extends App {
       val x =
         spark
           .createDataFrame(
-            df.rdd.zipWithUniqueId.map(tu => Row(tu._1.toSeq.:+(tu._2): _*)),
+            df.rdd.zipWithIndex.map(tu => Row(tu._1.toSeq.:+(tu._2): _*)),
             df.schema.add(StructField("primaryKeyForCbind", LongType, false)))
-          .withColumn("orderKeyForCbind", $"primaryKeyForCbind")
           .as("df")
       val y =
         spark
           .createDataFrame(
-            df2.rdd.zipWithUniqueId.map(tu => Row(tu._1.toSeq.:+(tu._2): _*)),
+            df2.rdd.zipWithIndex.map(tu => Row(tu._1.toSeq.:+(tu._2): _*)),
             df2.schema.add(StructField("primaryKeyForCbind", LongType, false)))
           .as("df2")
       x.join(y, col("df.primaryKeyForCbind") === col("df2.primaryKeyForCbind"))
-        .sort("orderKeyForCbind")
-        .drop("primaryKeyForCbind", "orderKeyForCbind")
+        .sort("df.primaryKeyForCbind")
+        .drop("primaryKeyForCbind")
     }
 
   val df =
