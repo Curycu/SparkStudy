@@ -6,9 +6,6 @@ object I extends App {
   import org.apache.spark.sql._
   import org.apache.spark.sql.functions._
   import org.apache.spark.sql.expressions.Window
-  import scala.util._
-  import java.time.LocalDate
-  import java.time.temporal.ChronoUnit
 
   val spark = SparkSession.builder().appName("sparksql").master("local").getOrCreate()
   import spark.implicits._
@@ -31,6 +28,10 @@ object I extends App {
     .filter(expr("rank <= 2"))
     .select("id", "date", "rank")
     .show()
+
+  import scala.util._
+  import java.time.LocalDate
+  import java.time.temporal.ChronoUnit
 
   val dayGap = (aft: String, bef: String) => {
     val befDate = Try(LocalDate.parse(bef))
