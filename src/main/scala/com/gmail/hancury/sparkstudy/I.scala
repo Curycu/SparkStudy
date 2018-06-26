@@ -26,6 +26,12 @@ object I extends App {
 
   val w = Window.partitionBy("id").orderBy("date")
 
+  df
+    .withColumn("rank", rank().over(w))
+    .filter(expr("rank <= 2"))
+    .select("id", "date", "rank")
+    .show()
+
   val dayGap = (aft: String, bef: String) => {
     val befDate = Try(LocalDate.parse(bef))
     val aftDate = Try(LocalDate.parse(aft))
