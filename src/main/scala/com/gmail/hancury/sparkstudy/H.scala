@@ -1,48 +1,33 @@
 package com.gmail.hancury.sparkstudy
 
-// 11. cbind : columnar union DataFrame to DataFrame
+// 11. udf
 object H extends App {
 
   import org.apache.spark.sql._
   import org.apache.spark.sql.functions._
-  import org.apache.spark.sql.types._
+  import java.time.LocalDate
 
   val spark = SparkSession.builder().appName("sparksql").master("local").getOrCreate()
   import spark.implicits._
 
-  val cbind: (DataFrame, DataFrame) => DataFrame =
-    (df, df2) => {
-      val x =
-        spark
-          .createDataFrame(
-            df.rdd.zipWithIndex.map(tu => Row(tu._1.toSeq.:+(tu._2): _*)),
-            df.schema.add(StructField("primaryKeyForCbind", LongType, false)))
-          .as("df")
-      val y =
-        spark
-          .createDataFrame(
-            df2.rdd.zipWithIndex.map(tu => Row(tu._1.toSeq.:+(tu._2): _*)),
-            df2.schema.add(StructField("primaryKeyForCbind", LongType, false)))
-          .as("df2")
-      x.join(y, col("df.primaryKeyForCbind") === col("df2.primaryKeyForCbind"))
-        .sort("df.primaryKeyForCbind")
-        .drop("primaryKeyForCbind")
-    }
-
   val df =
     Seq(
-      ("curycu", "2018-01-01"),
-      ("curycu", "2018-01-07"),
-      ("curycu", "2018-01-12"),
-      ("curycu", "2018-01-15"),
-      ("tester", "2018-01-01"),
-      ("tester", "2018-01-11"),
-      ("tester", "2018-01-18"))
-      .toDF("id", "date")
+      ("A", "861117"),
+      ("B", "830325"),
+      ("C", "160126"),
+      ("D", "620603"))
+      .toDF("id", "birth_date")
 
-  val df2 = Seq(0, 6, 5, 3, 0, 10, 7).toDF("daygap")
+  val getAge: String => Int = birthDate => {
+    val nowYear = LocalDate.now().getYear().toString.substring(2,4).toInt
+    val birthYear = birthDate.substring(0,2).toInt
+    if(birthYear <= nowYear) nowYear - birthYear + 1
+    else 100 - birthYear + nowYear + 1
+  }
+  val getAgeUdf = udf[Int, String](getAge)
 
-  val res = cbind(cbind(cbind(df, df2), df2), df)
-  res.printSchema
-  res.show
+  df
+    .filter(expr("birth_date is not null"))
+    .withColumn("age", getAgeUdf(col("birth_date")))
+    .show()
 }
