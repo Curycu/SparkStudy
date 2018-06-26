@@ -49,4 +49,18 @@ object I extends App {
     .withColumn("daygap", dayGapUdf($"lag_date", $"date"))
     .select("id", "date", "lag_date", "daygap")
     .show()
+
+  val wms3 = Window.partitionBy("id").orderBy("date").rowsBetween(-1, 1)
+
+  df
+    .withColumn("ms3_amount", sum($"amount").over(wms3))
+    .select("id", "amount", "ms3_amount")
+    .show()
+
+  val wcumsum = Window.partitionBy("id").orderBy("date").rowsBetween(Long.MinValue, 0)
+
+  df
+    .withColumn("cumsum_amount", sum($"amount").over(wcumsum))
+    .select("id", "amount", "cumsum_amount")
+    .show()
 }
